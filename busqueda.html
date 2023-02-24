@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Film&Film</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.scss" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./img/logo-white.png"
+              alt="Logo de mi sitio"
+              width="50"
+              height="50"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="favoritos.html">Favoritos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Generos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="generos.html#generoThriller">Thriller</a></li>
+                  <li><a class="dropdown-item" href="generos.html#generoAccion">Accion</a></li>
+                  <li><a class="dropdown-item" href="generos.html#generoDrama">Drama</a></li>
+                  <li><a class="dropdown-item" href="generos.html#generoAventuras">Aventuras</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" action="busqueda.html">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Fast & Furious"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <container>
+      <div class="container mb-2">
+        <h2>Resultados de búsqueda</h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./img/fast1.png" alt="fast1" class="img-fluid" />
+              </div>
+              <div class="col-md-9">
+                <h4 class="mb-1">Fast & Furious</h4>
+                <p class="mb-1">
+                  Una misteriosa banda de delincuentes se dedica a robar
+                  camiones en plena marcha desde vehículos deportivos. La
+                  policía decide infiltrar a un hombre en el mundo de las
+                  carreras ilegales para descubrir posibles sospechosos. El
+                  joven y apuesto Brian entra en el mundo del tuning donde
+                  conoce a Dominic, rey indiscutible de este mundo y sospechoso
+                  número uno, pero todo se complica cuando se enamora de la
+                  hermana de éste.
+                </p>
+                <p class="text-muted mb-0">2001</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./img/fast2.png" alt="fast2" class="img-fluid" />
+              </div>
+              <div class="col-md-9">
+                <h4 class="mb-1">Fast & Furious: 2</h4>
+                <p class="mb-1">
+                  Brian O'Connor, un policía caído en desgracia, fue un adicto a
+                  la velocidad y ahora está pagando un precio por ello. Tal y
+                  como lo ven sus antiguos jefes y los altos mandos del FBI,
+                  este agente de incógnito les echó a perder una de las
+                  investigaciones más importantes que habían emprendido.
+                </p>
+                <p class="text-muted mb-0">2003</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./img/fast_tok.png" alt="fast3" class="img-fluid" />
+              </div>
+              <div class="col-md-9">
+                <h4 class="mb-1">A todo gas: Tokyo Race</h4>
+                <p class="mb-1">
+                  Shaun Boswell es un chico que no acaba de encajar en ningún
+                  grupo. Su única conexión con el mundo de indiferencia que le
+                  rodea es a través de las carreras ilegales, lo que no le ha
+                  convertido en el chico favorito de la policía. Cuando amenazan
+                  con encarcelarle, le mandan fuera del país a pasar una
+                  temporada con su tío, un militar destinado en Japón. En el
+                  país donde nacieron la mayoría de los coches modificados, las
+                  simples carreras en la calle principal han sido sustituidas
+                  por el último reto automovilístico que desafía la gravedad,
+                  las carreras de "drift" (arrastre), una peligrosa mezcla de
+                  velocidad en pistas con curvas muy cerradas y en zigzag. En su
+                  primera incursión en el salvaje mundo de las carreras de
+                  "drift", Shaun acepta ingenuamente conducir un D.K, el Rey del
+                  Drift, que pertenece a los Yakuza, la mafia japonesa. Para
+                  pagar su deuda, no tiene más remedio que codearse con el hampa
+                  de Tokio y jugarse la vida.
+                </p>
+                <p class="text-muted mb-0">2006</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./img/fast4.png" alt="fast4" class="img-fluid" />
+              </div>
+              <div class="col-md-9">
+                <h4 class="mb-1">Fast & Furious: Aún más rápido</h4>
+                <p class="mb-1">
+                  El fugitivo y ex preso Dom Toretto y el detective Brian
+                  O’Conner vuelven a encontrarse en Los Ángeles y siguen
+                  llevándose igual de mal. Sin embargo, obligados a enfrentarse
+                  a un enemigo común, no les queda más remedio que unir sus
+                  fuerzas si quieren vencerle. Después del atraco a un convoy,
+                  los dos protagonistas descubrirán que si quieren vengarse,
+                  deberán llegar al límite de sus posibilidades al volante...
+                  Nueva entrega de la serie que volvió a contar con su -ahora ya
+                  famosos- 4 protagonistas originales, circustancia que resaltan
+                  en su original leyenda: "Nuevo modelo. Piezas originales".
+                </p>
+                <p class="text-muted mb-0">2009</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./img/fast5.png" alt="fast5" class="img-fluid" />
+              </div>
+              <div class="col-md-9">
+                <h4 class="mb-1">Fast & Furious 5</h4>
+                <p class="mb-1">
+                  Desde que Brian O'Conner (Paul Walker) y Mia Toretto (Jordana
+                  Brewster) sacaron a Dom Toretto (Vin Diesel) de la cárcel, se
+                  han visto obligados a huir y cruzar muchas fronteras para
+                  evitar a la policía. Atrapados en Río de Janeiro, una vez más
+                  tienen que darse a la fuga si quieren conservar la libertad.
+                  Pero los tres saben muy bien que la única posibilidad que
+                  tienen de poner fin a esta situación es enfrentarse de una vez
+                  por todas al empresario corrupto que quiere verlos muertos.
+                  Pero éste no es el único que les sigue la pista
+                </p>
+                <p class="text-muted mb-0">2011</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./img/fast6.png" alt="fast6" class="img-fluid" />
+              </div>
+              <div class="col-md-9">
+                <h4 class="mb-1">Fast & Furious 6</h4>
+                <p class="mb-1">
+                  Desde que Dom y Brian destruyeron el imperio de un mafioso y
+                  se hicieron con cien millones de dólares, se encuentran en
+                  paradero desconocido; no pueden regresar a casa porque la ley
+                  los persigue. Entretanto, Hobbs ha seguido la pista por una
+                  docena de países a una banda de letales conductores
+                  mercenarios, cuyo cerebro cuenta con la inestimable ayuda de
+                  la sexy Letty, un viejo amor de Dom que éste daba por muerta.
+                  La única forma de detenerlos es enfrentarse a ellos en las
+                  calles, así que Hobbs le pide a Dom que reúna a su equipo en
+                  Londres. ¿Qué obtendrán a cambio? Un indulto para que todos
+                  puedan volver a casa con sus familias.
+                </p>
+                <p class="text-muted mb-0">2013</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./img/fast7_1.png" alt="fast7" class="img-fluid" />
+              </div>
+              <div class="col-md-9">
+                <h4 class="mb-1">Fast & Furious 7</h4>
+                <p class="mb-1">
+                  De nuevo los problemas les persiguen. Sin conseguir librarse
+                  de la mancha de criminales de su ficha. Su pasado de larga
+                  trayectoria en las carreras ilegales les perseguirá y deberán
+                  hacer frente a las circunstancias de la única forma que saben.
+                  Cuando les pongan entre la espada y la pared idearán un plan
+                  para escapar del peligro en una trepidante carrera por salvar
+                  la vida y limpiar su reputación. Acción, persecuciones y un
+                  ritmo frenético en esta nueva entrega.
+                </p>
+                <p class="text-muted mb-0">2015</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./img/fast8.png" alt="fast8" class="img-fluid" />
+              </div>
+              <div class="col-md-9">
+                <h4 class="mb-1">Fast & Furious 8</h4>
+                <p class="mb-1">
+                  La carrera ha comenzado. Dom Toretto y su equipo volverán en
+                  esta ocasión con más ganas de guerra que nunca. No faltarán
+                  los excesos de velocidad y la adrenalina a raudales para un
+                  filme del que se espera que sea la entrega con más acción de
+                  esta saga callejera por excelencia.
+                </p>
+                <p class="text-muted mb-0">2017</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="./img/fast9.png" alt="fast9" class="img-fluid" />
+              </div>
+              <div class="col-md-9">
+                <h4 class="mb-1">Fast & Furious: 9</h4>
+                <p class="mb-1">
+                  Dom Toretto lleva una vida tranquila con Letty y su hijo, el
+                  pequeño Brian, pero saben que el peligro siempre acecha. Esta
+                  vez, esa amenaza obligará a Dom a enfrentarse a los pecados de
+                  su pasado si quiere salvar a quienes más quiere. El equipo se
+                  vuelve a reunir para impedir un complot a escala mundial,
+                  liderado por uno de los asesinos más peligrosos y mejor
+                  conductor a los que se han enfrentado; un hombre que además es
+                  el hermano desaparecido de Dom, Jakob. Novena entrega de la
+                  famosa franquicia.
+                </p>
+                <p class="text-muted mb-0">2021</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </container>
+
+    <footer class="bg-dark text-white py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+			<a class="navbar-brand" href="index.html">
+				<img
+				  src="./img/logo-white.png"
+				  alt="Logo de mi sitio"
+				  width="80"
+				  height="80"
+				/>
+			  </a>
+          </div>
+          <div class="col-10 pt-2">
+            <p class="mb-0 text-end">
+              &copy; 2023 Film&Film. Todos los derechos reservados.
+            </p>
+            <p class="mb-0 text-end">Marc Chaler Fibla.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

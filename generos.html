@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Film&Film</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.scss" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./img/logo-white.png"
+              alt="Logo de mi sitio"
+              width="50"
+              height="50"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="favoritos.html">Favoritos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Generos
+                </a>
+                <ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="generos.html#generoThriller">Thriller</a></li>
+					<li><a class="dropdown-item" href="generos.html#generoAccion">Accion</a></li>
+					<li><a class="dropdown-item" href="generos.html#generoDrama">Drama</a></li>
+					<li><a class="dropdown-item" href="generos.html#generoAventuras">Aventuras</a></li>
+				  </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" action="busqueda.html">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Fast & Furious"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <container>
+      <div class="container">
+        <h1>Generos</h1>
+        <!-- Lista de géneros -->
+        <ul class="list-group" id="generoThriller">
+          <li class="list-group-item active" aria-current="true">Thriller</li>
+          <li class="list-group-item">
+            <figure>
+              <img
+                src="/img/as_bestas.png"
+                alt="Die Hard"
+                class="me-2"
+                height="100"
+                width="100"
+				data-bs-toggle="modal"
+                data-bs-target="#asBestasModel"
+              />
+              The Beast
+            </figure>
+          </li>
+        </ul>
+        <ul class="list-group mt-3" id="generoAccion">
+          <li class="list-group-item active" aria-current="true">Accion</li>
+          <li class="list-group-item">
+            <figure>
+              <img
+                src="/img/avatar.png"
+                alt="avatar"
+                class="me-2"
+                height="100"
+                width="100"
+				data-bs-toggle="modal"
+                data-bs-target="#avatarModel"
+              />
+              Avatar
+            </figure>
+          </li>
+          <li class="list-group-item">
+            <figure>
+              <img
+                src="/img/black_panther.png"
+                alt="bp"
+                class="me-2"
+                height="100"
+                width="100"
+				data-bs-toggle="modal"
+                data-bs-target="#blackPantherModel"
+              />
+              Black Panther: Wakanda Forever
+            </figure>
+          </li>
+
+          <li class="list-group-item">
+            <figure>
+              <img
+                src="/img/todo_en_partes.png"
+                alt="todas"
+                class="me-2"
+                height="100"
+                width="100"
+				data-bs-toggle="modal"
+                data-bs-target="#todoalaVezModel"
+              />
+              Todo a la vez en todas partes
+            </figure>
+          </li>
+
+          <li class="list-group-item">
+            <figure>
+              <img
+                src="/img/top_gun.png"
+                alt="Die Hard"
+                class="me-2"
+                height="100"
+                width="100"
+				data-bs-toggle="modal"
+                data-bs-target="#topGunModel"
+              />
+              Top Gun: Maverick
+            </figure>
+          </li>
+        </ul>
+        <ul class="list-group mt-3" id="generoDrama">
+          <li class="list-group-item active" aria-current="true">Drama</li>
+          <li class="list-group-item">
+            <figure>
+              <img
+                src="/img/trainspotting.png"
+                alt="trains"
+                class="me-2"
+                height="100"
+                width="100"
+				data-bs-toggle="modal"
+                data-bs-target="#trainspottingModel"
+              />
+              Trainspotting
+            </figure>
+          </li>
+          <li class="list-group-item">
+            <figure>
+              <img
+                src="/img/pulpfiction.png"
+                alt="pulp"
+                class="me-2"
+                height="100"
+                width="100"
+              />
+              Pulp Fiction
+            </figure>
+          </li>
+          <li class="list-group-item">
+            <figure>
+              <img
+                src="/img/padrino.png"
+                alt="padrino"
+                class="me-2"
+                height="100"
+                width="100"
+				data-bs-toggle="modal"
+                data-bs-target="#padrinoModel"
+              />
+              El Padrino
+            </figure>
+          </li>
+          <li class="list-group-item">
+            <figure>
+              <img
+                src="/img/ciudaddios.png"
+                alt="ciudaddios.png"
+                class="me-2"
+                height="100"
+                width="100"
+				data-bs-toggle="modal"
+                data-bs-target="#ciudadModel"
+              />
+              Ciudad de Dios
+            </figure>
+          </li>
+        </ul>
+        <ul class="list-group mt-3" id="generoAventuras">
+          <li class="list-group-item active" aria-current="true">Aventuras</li>
+          <li class="list-group-item">
+            <figure>
+              <img
+                src="/img/señordelosanillocom.png"
+                alt="El señor de los anillos: La comunidad del anillo"
+                class="me-2"
+                height="100"
+                width="100"
+				data-bs-toggle="modal"
+                data-bs-target="#señorAnillosModel"
+              />
+              El señor de los anillos: La comunidad del anillo
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </container>
+    <footer class="bg-dark text-white py-3">
+		<div class="container">
+		  <div class="row">
+			<div class="col-2">
+			  <a class="navbar-brand" href="index.html">
+				  <img
+					src="./img/logo-white.png"
+					alt="Logo de mi sitio"
+					width="80"
+					height="80"
+				  />
+				</a>
+			</div>
+			<div class="col-10 pt-2">
+			  <p class="mb-0 text-end">
+				&copy; 2023 Film&Film. Todos los derechos reservados.
+			  </p>
+			  <p class="mb-0 text-end">Marc Chaler Fibla.</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+    <!-- MODALES -->
+    <div
+      class="modal fade"
+      id="asBestasModel"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="asBestasModel">The Beasts</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <img
+                src="./img/as_bestas.png"
+                class="card-img-top"
+                alt="as_bestas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Beasts</h5>
+                <p class="card-text">
+                  Una pareja francesa de mediana edad, Antoine y Olga, llega a
+                  vivir a un pueblo gallego en busca de una mayor cercanía con
+                  la naturaleza. Su presencia, sin embargo, enciende a dos
+                  lugareños, los hermanos Xan y Lorenzo, hasta el punto de una
+                  abierta hostilidad y luego una violencia impactante.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Calificación:
+                  <i class="fa fa-star"></i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"></i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"> </i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </li>
+                <li class="list-group-item">Fecha de estreno: 2022</li>
+                <li class="list-group-item">Duración: 2h 17min</li>
+                <li class="list-group-item">Género: Thriller</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-plus"></i> Agregar a
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="avatarModel"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="avatarModel">Avatar</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <img src="./img/avatar.png" class="card-img-top" alt="avatar" />
+              <div class="card-body">
+                <h5 class="card-title">Avatar</h5>
+                <p class="card-text">
+                  Año 2154. Jake Sully , un exmarine en silla de ruedas, es
+                  enviado al planeta Pandora, donde se ha creado el programa
+                  Avatar, gracias al cual los seres humanos pueden controlar de
+                  forma remota un cuerpo biológico con apariencia y genética de
+                  la especie nativa. Pronto se encontrará con la encrucijada
+                  entre seguir las órdenes de sus superiores o defender al mundo
+                  que le ha acogido y siente como suyo.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Calificación: <i class="fa fa-star"></i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"></i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </li>
+
+                <li class="list-group-item">Fecha de estreno: 2009</li>
+                <li class="list-group-item">Duración: 2h 42min</li>
+                <li class="list-group-item">Género: Accion</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-plus"></i> Agregar a
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="blackPantherModel"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="blackPantherModel">
+              Black Panther
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <img
+                src="./img/black_panther.png"
+                class="card-img-top"
+                alt="wakandaforever"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Black Panther: Wakanda Forever</h5>
+                <p class="card-text">
+                  La secuela de Black Panther (2018) continúa la historia del
+                  reino de Wakanda, y explora su situación de apertura al mundo
+                  tras generaciones de vivir ocultos. La primera película
+                  contaba la historia afro-futurista del noble guerrero y Rey
+                  T'Challa, al que daba vida el fallecido actor Chadwick
+                  Boseman, y en esta entrega vemos a su hermana pequeña, la
+                  inteligente Shuri, tomar su relevo como protagonista de la
+                  saga.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Calificación:
+                  <i class="fa fa-star"></i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"></i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"> </i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </li>
+                <li class="list-group-item">Fecha de estreno: 2022</li>
+                <li class="list-group-item">Duración: 2h 41min</li>
+                <li class="list-group-item">Género: Accion</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-plus"></i> Agregar a
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="todoalaVezModel"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="todoalaVezModel">
+              Todo a la vez en todas partes
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <img
+                src="./img/todo_en_partes.png"
+                class="card-img-top"
+                alt="Portada de la película"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Todo a la vez en todas partes</h5>
+                <p class="card-text">
+                  Cuando una ruptura interdimensional altera la realidad,
+                  Evelyn, una inmigrante china en Estados Unidos, se ve envuelta
+                  en una aventura salvaje en la que sólo ella puede salvar el
+                  mundo. Perdida en los mundos infinitos del multiverso, esta
+                  heroína inesperada debe canalizar sus nuevos poderes para
+                  luchar contra los extraños y desconcertantes peligros del
+                  multiverso mientras el destino del mundo pende de un hilo.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Calificación: <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"></i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </li>
+
+                <li class="list-group-item">Fecha de estreno: 2022</li>
+                <li class="list-group-item">Duración: 2h 20min</li>
+                <li class="list-group-item">Género: Accion</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-plus"></i> Agregar a
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="trainspottingModel"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="trainspottingModel">
+              Trainspotting
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <img
+                src="./img/trainspotting.png"
+                class="card-img-top"
+                alt="trains"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Trainspotting</h5>
+                <p class="card-text">
+                  Mark Renton es un joven escocés adicto a la heroína, al igual
+                  que el resto de sus amigos Todos ellos viven en un mundo
+                  aparte, al margen de la realidad. Dentro del grupo hay un
+                  violento y alcohólico psicópata, un drogadicto desesperado, un
+                  mujeriego con un conocimiento enciclopédico de Sean Connery y
+                  un entusiasta de las caminatas y de Iggy Pop.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Calificación: <i class="fa fa-star"></i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"></i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"></i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </li>
+                <li class="list-group-item">Fecha de estreno: 1996</li>
+                <li class="list-group-item">Duración: 1h 34min</li>
+                <li class="list-group-item">Género: Drama</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-xmark"></i> Quitar de
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="topGunModel"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="topGunModel">Top Gun: Maverick</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <img src="./img/top_gun.png" class="card-img-top" alt="topgun" />
+              <div class="card-body">
+                <h5 class="card-title">Top Gun: Maverick</h5>
+                <p class="card-text">
+                  Pete "Maverick" Mitchell lleva treinta años trabajando como
+                  piloto de pruebas, tratando de evitar el honorable ascenso que
+                  pondría fin a sus días de vuelo. Al ser uno de los mejores
+                  aviadores de la Armada, se le encarga el entrenamiento de un
+                  destacamento de graduados de Top Gun. El grupo tiene una
+                  misión especial que requiere que lleguen a donde ningún piloto
+                  lo ha hecho antes. ¿Podrá Maverick ayudar a Rooster (el hijo
+                  de su difunto amigo "Goose") a superar su incierto futuro?
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Calificación: <i class="fa fa-star"></i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"></i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </li>
+                <li class="list-group-item">Fecha de estreno: 2022</li>
+                <li class="list-group-item">Duración: 2h 11min</li>
+                <li class="list-group-item">Género: Accion</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-plus"></i> Agregar a
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="pulpFictionModel"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="pulpFictionModel">Pulp Fiction</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <img
+                src="./img/pulpfiction.png"
+                class="card-img-top"
+                alt="pulpfiction"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pulp Fiction</h5>
+                <p class="card-text">
+                  Jules y Vincent, dos asesinos a sueldo con muy pocas luces,
+                  trabajan para Marsellus Wallace. Vincent le confiesa a Jules
+                  que Marsellus le ha pedido que cuide de Mia, su mujer. Jules
+                  le recomienda prudencia porque es muy peligroso sobrepasarse
+                  con la novia del jefe. Cuando llega la hora de trabajar, ambos
+                  deben ponerse manos a la obra. Su misión: recuperar un
+                  misterioso maletín.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Calificación: <i class="fa fa-star"></i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"></i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"></i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </li>
+                <li class="list-group-item">Fecha de estreno: 1994</li>
+                <li class="list-group-item">Duración: 2h 34min</li>
+                <li class="list-group-item">Género: Drama</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-xmark"></i> Quitar de
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="padrinoModel"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="padrinoModel">El Padrino</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <img
+                src="./img/padrino.png"
+                class="card-img-top"
+                alt="padrino"
+                width="200px!important"
+                height="350px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">El Padrino</h5>
+                <p class="card-text">
+                  Don Vito Corleone, conocido dentro de los círculos del hampa
+                  como 'El Padrino', es el patriarca de una de las cinco
+                  familias que ejercen el mando de la Cosa Nostra en Nueva York
+                  en los años cuarenta. Don Corleone tiene cuatro hijos: una
+                  chica, Connie, y tres varones; Sonny, Michael y Fredo. Cuando
+                  el Padrino reclina intervenir en el negocio de
+                  estupefacientes, empieza una cruenta lucha de violentos
+                  episodios entre las distintas familias del crimen organizado.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Calificación: Calificación: <i class="fa fa-star"></i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"></i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"></i> <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </li>
+                <li class="list-group-item">Fecha de estreno: 1972</li>
+                <li class="list-group-item">Duración: 2h 55min</li>
+                <li class="list-group-item">Género: Drama</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-xmark"></i> Quitar de
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="señorAnillosModel"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="señorAnillosModel">
+              El señor de los anillos: La comunidad del anillo
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <img
+                src="./img/señordelosanillocom.png"
+                class="card-img-top"
+                alt="señordelosanillocoms"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  El señor de los anillos: La comunidad del anillo
+                </h5>
+                <p class="card-text">
+                  En la Tierra Media, el Señor Oscuro Saurón creó los Grandes
+                  Anillos de Poder, forjados por los herreros Elfos. Tres para
+                  los reyes Elfos, siete para los Señores Enanos, y nueve para
+                  los Hombres Mortales. Secretamente, Saurón también forjó un
+                  anillo maestro, el Anillo Único, que contiene en sí el poder
+                  para esclavizar a toda la Tierra Media. Con la ayuda de un
+                  grupo de amigos y de valientes aliados, Frodo emprende un
+                  peligroso viaje con la misión de destruir el Anillo Único.
+                  Pero el Señor Oscuro Sauron, quien creara el Anillo, envía a
+                  sus servidores para perseguir al grupo. Si Sauron lograra
+                  recuperar el Anillo, sería el final de la Tierra Media.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Calificación:
+
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"></i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"> </i>
+                </li>
+                <li class="list-group-item">Fecha de estreno: 2001</li>
+                <li class="list-group-item">Duración: 2h 59min</li>
+                <li class="list-group-item">Género: Aventuras</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-plus"></i> Agregar a
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="ciudadModel"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="ciudadModel">Ciudad de Dios</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <img
+                src="./img/ciudaddios.png"
+                class="card-img-top"
+                alt="ciudaddeDios"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ciudad de Dios</h5>
+                <p class="card-text">
+                  Basada en hechos reales, cuenta la historia del crecimiento
+                  del crimen organizado en los suburbios de la ciudad de Río de
+                  Janeiro, desde finales de los años sesenta hasta el comienzo
+                  de los ochenta, cuando el tráfico de drogas y la violencia
+                  impusieron su ley entre la miseria de las favelas.“Buscapé”
+                  tiene 11 años y es sólo un niño más en Cidade de Deus, un
+                  suburbio de Río de Janeiro. Tímido y delicado, observa a los
+                  niños duros de su barrio, sus robos, sus peleas, sus
+                  enfrentamientos diarios con la policía. Ya sabe lo que quiere
+                  ser si consigue sobrevivir: fotógrafo. “Dadinho”, un niño de
+                  su misma edad, se traslada al barrio. Sueña con ser el
+                  criminal más peligroso de Río de Janeiro y empieza su
+                  aprendizaje haciendo recados para los delincuentes locales.
+                  Dos vidas paralelas en Cidade de Deus.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Calificación:
+
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i> <i class="fa fa-star"></i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa fa-star"> </i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"> </i>
+                </li>
+                <li class="list-group-item">Fecha de estreno: 2002</li>
+                <li class="list-group-item">Duración: 2h 10min</li>
+                <li class="list-group-item">Género: Drama</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-xmark"></i> Quitar de
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

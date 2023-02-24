@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Film&Film</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./img/logo-white.png"
+              alt="Logo de mi sitio"
+              width="50"
+              height="50"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="favoritos.html">Favoritos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Generos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="generos.html#generoThriller">Thriller</a></li>
+                  <li><a class="dropdown-item" href="generos.html#generoAccion">Accion</a></li>
+                  <li><a class="dropdown-item" href="generos.html#generoDrama">Drama</a></li>
+                  <li><a class="dropdown-item" href="generos.html#generoAventuras">Aventuras</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" action="busqueda.html">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Fast & Furious"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <container class="myCointainer">
+      <div class="container">
+        <h1 class="text-center mt-5 mb-4">Mis películas favoritas</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card movie-card">
+              <img
+                src="./img/trainspotting.png"
+                class="card-img-top"
+                alt="..."
+                width="300"
+                height="400"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Trainspotting</h5>
+                <p class="card-text">Breve descripción de la película.</p>
+                                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-xmark"></i> Quitar de
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card movie-card">
+              <img
+                src="./img/ciudaddios.png"
+                class="card-img-top"
+                alt="ciudad"
+                width="300"
+                height="400"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ciudad de Dios</h5>
+                <p class="card-text">Breve descripción de la película.</p>
+                                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-xmark"></i> Quitar de
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card movie-card">
+              <img
+                src="./img/pulpfiction.png"
+                class="card-img-top"
+                alt="pulp"
+                width="300"
+                height="400"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pulp Fiction</h5>
+                <p class="card-text">Breve descripción de la película.</p>
+                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-xmark"></i> Quitar de
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card movie-card">
+              <img
+                src="./img/padrino.png"
+                class="card-img-top"
+                alt="padrino"
+                width="300"
+                height="400"
+              />
+              <div class="card-body">
+                <h5 class="card-title">El Padrino</h5>
+                <p class="card-text">Breve descripción de la película.</p>
+                                <a href="#" class="card-link"
+                  ><i class="fa-solid fa-heart-circle-xmark"></i> Quitar de
+                  favoritos</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </container>
+    <footer class="bg-dark text-white py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+			<a class="navbar-brand" href="index.html">
+				<img
+				  src="./img/logo-white.png"
+				  alt="Logo de mi sitio"
+				  width="80"
+				  height="80"
+				/>
+			  </a>
+          </div>
+          <div class="col-10 pt-2">
+            <p class="mb-0 text-end">
+              &copy; 2023 Film&Film. Todos los derechos reservados.
+            </p>
+            <p class="mb-0 text-end">Marc Chaler Fibla.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
